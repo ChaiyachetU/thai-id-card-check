@@ -30,7 +30,7 @@ function idCardCheck(idCardNumber) {
   
   var checkDigit = (11 - (sum % 11)) % 10;
   
-  if (checkDigit === parseInt(idCardNumber[12])) {
+  if (checkDigit == idCardNumber[12]) {
     return "หมายเลขบัตรถูกต้อง";
   } else {
     return "หมายเลขบัตรไม่ถูกต้อง";
